@@ -1,0 +1,15 @@
+1. 컬럼 속성 변경 
+- df['A'].astype('float')
+- df['B'].astype('int')
+
+- pd.to_numeric(df['E'])
+- pd.to_numeric(pd.Series(['1', '2', 'a']), errors='ignore')
+- pd.to_numeric(pd.Series(['1', '2', 'a']), errors='coerce')
+- pd.to_numeric(df.A, errors='coerce').isnull()
+- pd.to_numeric(df.A, errors='coerce').isnull()
+- df[pd.to_numeric(df.A, errors='coerce').isnull()]
+
+- pd.to_datetime(df['C'])
+- pd.to_datetime('2.1.2011', dayfirst=True)
+
+- pd.to_timedelta(df['D'])
